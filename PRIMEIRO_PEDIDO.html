@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#171b2b">
+<title>PRIMEIRO PEDIDO — Seu negócio começa aqui</title>
+<style>
+:root{--bg:#f5f3ef;--panel:#fff;--ink:#202438;--muted:#777d8e;--line:#e9e7e2;--navy:#171b2b;--gold:#c5a46d;--gold2:#ead9b9;--green:#397b63;--red:#b85c58;--shadow:0 12px 34px rgba(28,32,48,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.sidebar{background:var(--navy);color:#fff;padding:28px 18px;display:flex;flex-direction:column;gap:26px}.brand{padding:4px 10px}.brand small{color:#c5a46d;letter-spacing:.22em;font-size:10px;font-weight:800}.brand h1{font-size:22px;letter-spacing:.04em;margin:4px 0}.brand p{color:#aeb2c0;font-size:12px;margin:0}.nav{display:grid;gap:6px}.nav button{border:0;background:transparent;color:#c6c9d2;text-align:left;padding:12px;border-radius:10px;font-weight:600}.nav button.active,.nav button:hover{background:#2a3045;color:#fff}.nav button span{display:inline-block;width:26px;color:var(--gold)}.side-note{margin-top:auto;border:1px solid #34394c;padding:14px;border-radius:12px;color:#bfc2cc;font-size:12px}.side-note strong{color:#e8d8b9;display:block;margin-bottom:4px}
+main{padding:34px clamp(18px,4vw,54px);max-width:1440px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:26px}.eyebrow{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.top h2{font-size:clamp(24px,3vw,34px);margin:4px 0 0;letter-spacing:-.04em}.date{color:var(--muted);font-size:13px}.view{display:none}.view.active{display:block}.hero{background:linear-gradient(120deg,#1c2134,#30354a);color:#fff;border-radius:20px;padding:28px 30px;display:flex;justify-content:space-between;align-items:center;gap:22px;box-shadow:var(--shadow);margin-bottom:20px}.hero h3{font-size:clamp(21px,2.5vw,29px);margin:4px 0 8px;letter-spacing:-.035em}.hero p{color:#c8cad3;margin:0;max-width:590px}.hero .tag{color:#e5d0a8;font-size:11px;letter-spacing:.15em;font-weight:800}.hero-mark{width:82px;height:82px;border:1px solid #8c795a;border-radius:50%;display:grid;place-items:center;color:#e4d1ae;font-size:30px;flex:none}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:19px;box-shadow:0 3px 14px rgba(28,32,48,.025)}.stat-label{font-size:12px;color:var(--muted);font-weight:650}.stat{font-size:28px;font-weight:800;letter-spacing:-.04em;margin-top:6px}.stat-sub{font-size:11px;color:var(--muted);margin-top:2px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:26px 0 12px}.section-head h3{margin:0;font-size:18px;letter-spacing:-.02em}.section-head p{margin:3px 0 0;color:var(--muted);font-size:12px}.progress{height:8px;background:#ece9e2;border-radius:99px;overflow:hidden;margin-top:12px}.progress i{display:block;height:100%;background:var(--gold);width:0%;transition:.2s}.task-list{display:grid;gap:8px}.task{display:flex;align-items:flex-start;gap:11px;padding:12px 13px;border:1px solid var(--line);border-radius:11px;background:#fff}.task input{accent-color:var(--green);margin-top:4px;width:16px;height:16px}.task.done .task-text{text-decoration:line-through;color:#9296a1}.task small{display:block;color:var(--muted);font-size:11px}.btn{border:0;border-radius:10px;padding:11px 15px;font-weight:750;background:var(--navy);color:#fff}.btn.gold{background:var(--gold);color:#201d19}.btn.ghost{background:#f3f1ec;color:var(--ink);border:1px solid var(--line)}.btn.danger{background:#f8eae8;color:var(--red)}.btn.small{padding:8px 11px;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.two{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.field{display:grid;gap:5px;margin-bottom:12px}.field label{font-size:12px;color:#626879;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid #dfdfe2;background:#fff;border-radius:9px;padding:10px 11px;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{min-height:90px;resize:vertical}.formrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.result{background:#f6f2e9;border:1px solid #eadfc9;border-radius:12px;padding:16px}.result strong{font-size:25px;display:block;letter-spacing:-.03em}.result small{color:#716b5f}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}.table th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}.empty{padding:25px;text-align:center;color:var(--muted);border:1px dashed #d8d5ce;border-radius:12px}.pill{display:inline-block;padding:4px 8px;border-radius:99px;background:#edf3ef;color:var(--green);font-size:10px;font-weight:800}.notice{font-size:12px;color:var(--muted);background:#f7f6f3;border-radius:10px;padding:12px;margin-top:12px}.day{font-size:11px;font-weight:800;color:var(--gold);letter-spacing:.12em}.order-item{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.order-item:last-child{border:0}.mobilebar{display:none}
+@media(max-width:850px){.shell{grid-template-columns:1fr}.sidebar{padding:13px 14px;gap:10px}.brand{display:flex;align-items:center;gap:10px}.brand h1{font-size:17px}.brand p{display:none}.brand small{display:none}.nav{display:flex;overflow:auto;gap:4px}.nav button{white-space:nowrap;padding:9px 11px;font-size:12px}.nav button span{width:auto;margin-right:5px}.side-note{display:none}main{padding:22px 15px 90px}.hero{padding:22px}.hero-mark{width:58px;height:58px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.top{align-items:flex-start}.date{display:none}}
+@media(max-width:480px){.grid{grid-template-columns:1fr 1fr;gap:9px}.card{padding:14px}.stat{font-size:23px}.hero-mark{display:none}.formrow{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}}
+.side-note .btn{width:100%;justify-content:center}.result small{display:block;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.1em;margin-bottom:6px}\n</style>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+ <div class="brand"><div><small>SEU NEGÓCIO COMEÇA AQUI</small><h1>PRIMEIRO PEDIDO</h1><p>Um passo de cada vez. Uma venda de cada vez.</p></div></div>
+ <nav class="nav" aria-label="Navegação">
+  <button class="active" data-view="inicio"><span>⌂</span>Visão geral</button>
+  <button data-view="perfil"><span>✦</span>Meu começo</button>
+  <button data-view="plano"><span>✓</span>Plano de 7 dias</button>
+  <button data-view="custos"><span>＄</span>Calculadora de preço</button>
+  <button data-view="cardapio"><span>▤</span>Meu cardápio</button>
+  <button data-view="vendas"><span>↗</span>Mensagens de venda</button>
+  <button data-view="pedidos"><span>□</span>Pedidos</button>
+ </nav>
+ <div class="side-note"><strong>Seus dados são seus.</strong>Salvos neste navegador. Exporte um backup para guardar ou transferir seus dados.
+  <div style="display:grid;gap:7px;margin-top:12px">
+   <button class="btn ghost small" onclick="exportBackup()">↓ Exportar backup</button>
+   <button class="btn ghost small" onclick="document.getElementById('backupFile').click()">↑ Restaurar backup</button>
+   <input id="backupFile" type="file" accept="application/json,.json" style="display:none" onchange="importBackup(event)">
+  </div>
+ </div>
+</aside>
+<main>
+ <header class="top"><div><div class="eyebrow">PAINEL DE EXECUÇÃO</div><h2 id="pageTitle">Vamos tirar sua ideia do papel.</h2></div><div class="date" id="today"></div></header>
+<section class="view active" id="inicio">
+ <div class="hero"><div><div class="tag">COMECE PEQUENO. COMECE COM CLAREZA.</div><h3>Seu primeiro pedido começa com o próximo passo.</h3><p>Organize sua ideia, entenda seus custos e prepare uma oferta simples para apresentar a potenciais clientes.</p><div class="actions" style="margin-top:18px"><button class="btn gold" onclick="show('plano')">Continuar meu plano →</button></div></div><div class="hero-mark">✦</div></div>
+ <div class="grid">
+  <div class="card"><div class="stat-label">Etapas concluídas</div><div class="stat" id="doneStat">0/7</div><div class="stat-sub">Do seu plano inicial</div></div>
+  <div class="card"><div class="stat-label">Produtos no cardápio</div><div class="stat" id="productStat">0</div><div class="stat-sub">Produtos cadastrados</div></div>
+  <div class="card"><div class="stat-label">Pedidos registrados</div><div class="stat" id="orderStat">0</div><div class="stat-sub">Acompanhe sua operação</div></div>
+ </div>
+ <div class="section-head"><div><h3>Seu avanço</h3><p>Pequenas ações constroem consistência.</p></div><strong id="progressLabel">0%</strong></div>
+ <div class="progress"><i id="progressBar"></i></div>
+ <div class="section-head"><div><h3>Próxima ação recomendada</h3><p>Não tente resolver tudo de uma vez.</p></div></div>
+ <div class="card"><div class="day">PRIMEIRO PASSO</div><h3 style="margin:5px 0">Escolha um produto simples para testar.</h3><p style="color:var(--muted);font-size:13px">Considere o que você já sabe fazer, os utensílios que possui e o dinheiro que pode investir sem comprometer seu orçamento.</p><button class="btn ghost small" onclick="show('plano')">Ver plano de 7 dias</button></div>
+</section>
+
+<section class="view" id="perfil">
+ <div class="section-head"><div><h3>Vamos encontrar seu ponto de partida.</h3><p>Responda três perguntas. Você pode mudar essas respostas quando quiser.</p></div></div>
+ <div class="two">
+  <div class="card">
+   <div class="field"><label for="budget">Quanto você pode investir no primeiro teste?</label>
+    <select id="budget"><option value="30">Até R$ 30</option><option value="60">De R$ 31 a R$ 60</option><option value="100">De R$ 61 a R$ 100</option><option value="200">De R$ 101 a R$ 200</option><option value="300">Mais de R$ 200</option></select>
+   </div>
+   <div class="field"><label for="experience">Como está sua experiência com doces?</label>
+    <select id="experience"><option value="iniciante">Nunca preparei para vender</option><option value="caseiro">Sei fazer alguns doces em casa</option><option value="experiente">Já preparo doces com frequência</option></select>
+   </div>
+   <div class="field"><label for="availableTime">Quanto tempo você consegue dedicar por dia?</label>
+    <select id="availableTime"><option value="30">Até 30 minutos</option><option value="60">De 30 minutos a 1 hora</option><option value="120">De 1 a 2 horas</option><option value="more">Mais de 2 horas</option></select>
+   </div>
+   <button class="btn gold" onclick="saveProfile()">Montar meu ponto de partida →</button>
+  </div>
+  <div class="card" id="profileResult">
+   <div class="day">SEU PONTO DE PARTIDA</div><h3 style="margin:6px 0">Vamos começar com clareza.</h3>
+   <p style="color:var(--muted);font-size:13px">Preencha as respostas ao lado para receber uma sugestão inicial compatível com seu orçamento, experiência e tempo.</p>
+  </div>
+ </div>
+ <div class="notice">As sugestões são ideias para testar, não garantias de procura ou lucro. Antes de vender, confira custos, conservação, higiene, rotulagem e regras locais aplicáveis.</div>
+</section>
+\n<section class="view" id="plano">
+ <div class="section-head"><div><h3>Plano de 7 dias</h3><p>Marque cada tarefa quando concluir. Você pode seguir no seu ritmo.</p></div><span class="pill" id="planPill">0 de 7 dias</span></div>
+ <div class="card"><div class="progress"><i id="planBar"></i></div><div id="tasks" class="task-list" style="margin-top:16px"></div></div>
+ <div class="notice">Este plano organiza ações que dependem de você. Concluir as etapas não garante vendas; o objetivo é preparar e apresentar uma oferta real, aprender com as respostas e ajustar.</div>
+</section>
+<section class="view" id="custos">
+ <div class="section-head"><div><h3>Calculadora de preço</h3><p>Estime o custo da receita e um preço inicial por unidade.</p></div></div>
+ <div class="two">
+  <div class="card">
+   <div class="field"><label>Nome do produto</label><input id="costName" placeholder="Ex.: brigadeiro tradicional"></div>
+   <div class="formrow"><div class="field"><label>Custo total dos ingredientes (R$)</label><input id="ingredients" type="number" min="0" step=".01" value="25"></div><div class="field"><label>Embalagens (R$)</label><input id="packaging" type="number" min="0" step=".01" value="5"></div></div>
+   <div class="formrow"><div class="field"><label>Outros custos da receita (R$)</label><input id="otherCost" type="number" min="0" step=".01" value="3"></div><div class="field"><label>Unidades produzidas</label><input id="yield" type="number" min="1" step="1" value="20"></div></div>
+   <div class="field"><label>Margem desejada sobre o preço (%)</label><input id="margin" type="number" min="0" max="90" step="1" value="40"></div>
+   <div class="actions"><button class="btn gold" onclick="calculate()">Calcular preço</button><button class="btn ghost" onclick="resetCalc()">Limpar</button></div>
+  </div>
+  <div class="card"><div class="day">ESTIMATIVA DA RECEITA</div><div class="result" style="margin-top:10px"><small>Custo por unidade</small><strong id="unitCost">R$ 1,65</strong></div><div class="result" style="margin-top:10px"><small>Preço sugerido por unidade</small><strong id="suggestPrice">R$ 2,75</strong></div><div class="result" style="margin-top:10px"><small>Resultado estimado por unidade*</small><strong id="unitProfit">R$ 1,10</strong></div><p class="notice">*Estimativa simplificada. Inclua seu tempo de trabalho, taxas, impostos, perdas, entrega e custos fixos antes de definir o preço final. Compare também com o mercado e teste a aceitação.</p><button class="btn small" style="margin-top:10px" onclick="saveProductFromCalc()">Salvar no cardápio</button></div>
+ </div>
+</section>
+<section class="view" id="cardapio">
+ <div class="section-head"><div><h3>Meu cardápio</h3><p>Cadastre o que você pretende oferecer.</p></div></div>
+ <div class="two"><div class="card"><h3 style="margin-top:0">Adicionar produto</h3><div class="field"><label>Nome</label><input id="prodName" placeholder="Ex.: brownie"></div><div class="formrow"><div class="field"><label>Preço de venda (R$)</label><input id="prodPrice" type="number" min="0" step=".01" placeholder="6,00"></div><div class="field"><label>Descrição curta</label><input id="prodDesc" placeholder="Brownie com chocolate"></div></div><button class="btn gold" onclick="addProduct()">Adicionar ao cardápio</button></div><div class="card"><h3 style="margin-top:0">Dica de apresentação</h3><p style="font-size:13px;color:var(--muted)">Comece com poucos itens. Descreva tamanho, sabor, quantidade por embalagem, preço e como encomendar. Só anuncie produtos que você consegue produzir com qualidade e segurança.</p></div></div>
+ <div class="card" style="margin-top:14px"><div id="productList"></div></div>
+</section>
+<section class="view" id="vendas">
+ <div class="section-head"><div><h3>Mensagens para vender</h3><p>Escolha um modelo, personalize e copie para usar.</p></div></div>
+ <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
+  <div class="card"><div class="day">PRIMEIRO CONTATO</div><h3>Apresentação</h3><p style="color:var(--muted);font-size:13px">Para avisar pessoas próximas sobre seu novo produto.</p><textarea id="msg1">Oi! Estou começando a produzir [produto] por encomenda 😊 Nesta semana vou fazer [sabores/opções]. Se tiver interesse, posso te enviar o cardápio e os valores!</textarea><button class="btn ghost small" onclick="copyText('msg1')">Copiar mensagem</button></div>
+  <div class="card"><div class="day">OFERTA</div><h3>Oferta da semana</h3><p style="color:var(--muted);font-size:13px">Para apresentar uma oferta objetiva.</p><textarea id="msg2">Oi! Esta semana estou aceitando encomendas de [produto]. A unidade/caixa sai por [preço] e as entregas/retiradas serão em [dia]. Quer que eu reserve para você?</textarea><button class="btn ghost small" onclick="copyText('msg2')">Copiar mensagem</button></div>
+  <div class="card"><div class="day">PÓS-VENDA</div><h3>Pedido entregue</h3><p style="color:var(--muted);font-size:13px">Para pedir retorno e melhorar.</p><textarea id="msg3">Oi! Passando para agradecer pelo pedido ❤️ Quando experimentar, me conta o que achou? Sua opinião me ajuda muito a melhorar!</textarea><button class="btn ghost small" onclick="copyText('msg3')">Copiar mensagem</button></div>
+ </div>
+ <div class="notice">Personalize as mensagens com informações verdadeiras. Evite prometer resultados, usar escassez falsa ou enviar mensagens repetidas a quem não demonstrou interesse.</div>
+</section>
+<section class="view" id="pedidos">
+ <div class="section-head"><div><h3>Controle de pedidos</h3><p>Registre encomendas, valores e situação de cada pedido.</p></div></div>
+ <div class="two"><div class="card"><h3 style="margin-top:0">Novo pedido</h3><div class="field"><label>Nome do cliente</label><input id="client" placeholder="Nome"></div><div class="field"><label>Produto / pedido</label><input id="orderProduct" placeholder="Ex.: 12 brownies"></div><div class="formrow"><div class="field"><label>Valor total (R$)</label><input id="orderValue" type="number" min="0" step=".01" placeholder="72,00"></div><div class="field"><label>Data combinada</label><input id="orderDate" type="date"></div></div><div class="field"><label>Status</label><select id="orderStatus"><option>Em aberto</option><option>Confirmado</option><option>Em produção</option><option>Entregue</option><option>Cancelado</option></select></div><button class="btn gold" onclick="addOrder()">Salvar pedido</button></div><div class="card"><div class="day">RESUMO</div><h3 id="salesTotal" style="font-size:30px;margin:7px 0">R$ 0,00</h3><p style="color:var(--muted);font-size:12px">Soma dos pedidos não cancelados registrados. Não representa lucro.</p><div id="orderCount" class="pill">0 pedidos</div></div></div>
+ <div class="card" style="margin-top:14px"><div id="orderList"></div></div>
+</section>
+<footer style="margin-top:28px;color:var(--muted);font-size:11px;text-align:center">PRIMEIRO PEDIDO · Ferramenta de organização. Não garante vendas ou renda. Consulte orientações locais de boas práticas para produção e comercialização de alimentos.</footer>
+</main></div>
+<script>
+const KEY='primeiroPedido_v2';
+const defaultTasks=[
+ ['Dia 1 — Escolha seu produto','Escolha uma opção que você saiba preparar ou consiga aprender, considerando orçamento, utensílios e tempo.'],
+ ['Dia 2 — Teste em pequena quantidade','Faça um lote pequeno, anote ingredientes, rendimento e pontos a melhorar.'],
+ ['Dia 3 — Calcule seus custos','Registre ingredientes, embalagem, perdas e demais custos. Defina um preço inicial para testar.'],
+ ['Dia 4 — Monte seu cardápio','Cadastre poucos produtos, descrições claras, preços e condições de encomenda.'],
+ ['Dia 5 — Prepare sua apresentação','Tire fotos reais com boa iluminação e escreva uma mensagem simples de apresentação.'],
+ ['Dia 6 — Apresente sua oferta','Compartilhe com pessoas e canais relevantes, respeitando regras e evitando mensagens indesejadas.'],
+ ['Dia 7 — Revise e ajuste','Anote respostas, dúvidas e interesse. Ajuste produto, preço ou comunicação com base no retorno.']
+];
+let data=load();
+function load(){try{const current=localStorage.getItem(KEY);if(current)return JSON.parse(current);const old=localStorage.getItem('primeiroPedido_v1');if(old){const migrated=JSON.parse(old);localStorage.setItem(KEY,JSON.stringify(migrated));return migrated}return {tasks:[],products:[],orders:[],profile:null}}catch(e){return {tasks:[],products:[],orders:[],profile:null}}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(data));renderAll()}catch(e){alert('Não foi possível salvar neste navegador. Exporte um backup e libere espaço de armazenamento.')}}
+function money(v){return Number(v||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function show(id){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.view===id));const names={inicio:'Vamos tirar sua ideia do papel.',perfil:'Encontre um começo que caiba na sua rotina.',plano:'Um plano simples, uma ação por dia.',custos:'Entenda seus números antes de vender.',cardapio:'Apresente seus produtos com clareza.',vendas:'Palavras simples para começar conversas.',pedidos:'Organize cada encomenda.'};document.getElementById('pageTitle').textContent=names[id];}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>show(b.dataset.view)));
+function renderTasks(){let done=data.tasks.filter(Boolean).length;document.getElementById('tasks').innerHTML=defaultTasks.map((t,i)=>`<label class="task ${data.tasks[i]?'done':''}"><input type="checkbox" ${data.tasks[i]?'checked':''} onchange="toggleTask(${i},this.checked)"><span class="task-text"><b>${t[0]}</b><small>${t[1]}</small></span></label>`).join('');document.getElementById('planPill').textContent=`${done} de 7 dias`;document.getElementById('planBar').style.width=(done/7*100)+'%';document.getElementById('doneStat').textContent=done+'/7';document.getElementById('progressLabel').textContent=Math.round(done/7*100)+'%';document.getElementById('progressBar').style.width=(done/7*100)+'%'}
+function toggleTask(i,v){data.tasks[i]=v;save()}
+function getCalculation(){let total=['ingredients','packaging','otherCost'].reduce((s,id)=>s+Math.max(0,Number(document.getElementById(id).value)||0),0);let qty=Math.max(1,Number(document.getElementById('yield').value)||1);let margin=Math.min(90,Math.max(0,Number(document.getElementById('margin').value)||0))/100;let unit=total/qty;let price=unit/(1-margin);return {unit,price,profit:price-unit,total,qty,margin}}
+function calculate(){let r=getCalculation();document.getElementById('unitCost').textContent=money(r.unit);document.getElementById('suggestPrice').textContent=money(r.price);document.getElementById('unitProfit').textContent=money(r.profit)}
+function resetCalc(){['costName'].forEach(id=>document.getElementById(id).value='');document.getElementById('ingredients').value=0;document.getElementById('packaging').value=0;document.getElementById('otherCost').value=0;document.getElementById('yield').value=1;document.getElementById('margin').value=40;calculate()}
+function addProduct(name,price,desc){name=name??document.getElementById('prodName').value.trim();price=price??Number(document.getElementById('prodPrice').value);desc=desc??document.getElementById('prodDesc').value.trim();if(!name||!Number.isFinite(Number(price))||Number(price)<=0){alert('Informe o nome e um preço válido.');return}data.products.push({id:Date.now(),name,price:Number(price),desc});document.getElementById('prodName').value='';document.getElementById('prodPrice').value='';document.getElementById('prodDesc').value='';save()}
+function saveProductFromCalc(){let name=document.getElementById('costName').value.trim();let price=Number(document.getElementById('suggestPrice').textContent.replace(/[^\d,]/g,'').replace(',','.'));if(!name){alert('Dê um nome ao produto na calculadora.');return}addProduct(name,price,'Preço inicial calculado; revise antes de publicar.');show('cardapio')}
+function removeProduct(id){data.products=data.products.filter(p=>p.id!==id);save()}
+function renderProducts(){let el=document.getElementById('productList');document.getElementById('productStat').textContent=data.products.length;if(!data.products.length){el.innerHTML='<div class="empty">Seu cardápio ainda está vazio. Cadastre seu primeiro produto acima.</div>';return}el.innerHTML='<table class="table"><thead><tr><th>Produto</th><th>Descrição</th><th>Preço</th><th></th></tr></thead><tbody>'+data.products.map(p=>`<tr><td><b>${esc(p.name)}</b></td><td>${esc(p.desc||'—')}</td><td>${money(p.price)}</td><td><button class="btn danger small" onclick="removeProduct(${p.id})">Excluir</button></td></tr>`).join('')+'</tbody></table>'}
+function addOrder(){let client=document.getElementById('client').value.trim(),product=document.getElementById('orderProduct').value.trim(),value=Number(document.getElementById('orderValue').value),date=document.getElementById('orderDate').value,status=document.getElementById('orderStatus').value;if(!client||!product||!Number.isFinite(value)||value<=0){alert('Preencha cliente, pedido e valor válido.');return}data.orders.push({id:Date.now(),client,product,value,date,status});['client','orderProduct','orderValue','orderDate'].forEach(id=>document.getElementById(id).value='');save()}
+function setStatus(id,status){let o=data.orders.find(x=>x.id===id);if(o){o.status=status;save()}}
+function removeOrder(id){data.orders=data.orders.filter(o=>o.id!==id);save()}
+function renderOrders(){document.getElementById('orderStat').textContent=data.orders.length;let total=data.orders.filter(o=>o.status!=='Cancelado').reduce((s,o)=>s+o.value,0);document.getElementById('salesTotal').textContent=money(total);document.getElementById('orderCount').textContent=data.orders.length+' pedidos';let el=document.getElementById('orderList');if(!data.orders.length){el.innerHTML='<div class="empty">Nenhum pedido registrado ainda.</div>';return}el.innerHTML=data.orders.slice().reverse().map(o=>`<div class="order-item"><div><b>${esc(o.client)}</b><div style="font-size:12px;color:var(--muted)">${esc(o.product)} · ${o.date?new Date(o.date+'T12:00:00').toLocaleDateString('pt-BR'):'Sem data'} · ${money(o.value)}</div></div><div style="display:flex;gap:7px;align-items:center;flex-wrap:wrap"><select aria-label="Status do pedido" onchange="setStatus(${o.id},this.value)" style="border:1px solid var(--line);border-radius:8px;padding:7px;font-size:11px">${['Em aberto','Confirmado','Em produção','Entregue','Cancelado'].map(s=>`<option ${o.status===s?'selected':''}>${s}</option>`).join('')}</select><button class="btn danger small" onclick="removeOrder(${o.id})">×</button></div></div>`).join('')}
+
+function saveProfile(){
+ const profile={
+  budget:Number(document.getElementById('budget').value),
+  experience:document.getElementById('experience').value,
+  time:document.getElementById('availableTime').value
+ };
+ data.profile=profile;save();renderProfile();
+}
+function renderProfile(){
+ const p=data.profile;if(!p)return;
+ const budgetLabels={30:'Até R$ 30',60:'R$ 31 a R$ 60',100:'R$ 61 a R$ 100',200:'R$ 101 a R$ 200',300:'Mais de R$ 200'};
+ const expLabels={iniciante:'Começando do zero',caseiro:'Já prepara em casa',experiente:'Já tem prática'};
+ const timeLabels={'30':'Até 30 min/dia','60':'30 min a 1h/dia','120':'1 a 2h/dia',more:'Mais de 2h/dia'};
+ let idea,why,steps;
+ if(p.budget<=30){idea='Teste uma receita em porção pequena, como brigadeiro tradicional ou beijinho.';why='Um lote reduzido ajuda a limitar o gasto inicial. Confira o preço dos ingredientes e o rendimento antes de comprar.'}
+ else if(p.budget<=60){idea='Compare um doce de poucos ingredientes, como brownie simples ou brigadeiro.';why='Escolha apenas uma receita para o primeiro teste e use utensílios que já possui.'}
+ else {idea='Compare duas opções simples, como brownie e brigadeiro, mas teste uma por vez.';why='Não comprometa todo o orçamento: reserve parte para embalagem, imprevistos e reposição.'}
+ if(p.experience==='iniciante'){steps='Comece aprendendo e repetindo uma receita básica. Faça um teste para consumo próprio e peça opiniões sinceras antes de oferecer.'}
+ else if(p.experience==='caseiro'){steps='Escolha o doce que você prepara com mais consistência. Registre quantidades, tempo de preparo e rendimento real.'}
+ else {steps='Use sua receita mais consistente e valide custo por unidade, embalagem e capacidade de produção.'}
+ const time=p.time==='30'?'Priorize uma tarefa curta por dia e um lote bem pequeno.':p.time==='60'?'Divida o trabalho em blocos curtos: compra, preparo, cálculo e divulgação.':p.time==='120'?'Reserve um bloco para testar a receita e outro para calcular e organizar.':'Você pode planejar um teste completo, mas evite produzir mais do que consegue conservar e entregar com qualidade.';
+ document.getElementById('budget').value=String(p.budget);
+ document.getElementById('experience').value=p.experience;
+ document.getElementById('availableTime').value=p.time;
+ document.getElementById('profileResult').innerHTML=`<div class="day">SEU PONTO DE PARTIDA</div><h3 style="margin:6px 0">Seu primeiro teste</h3><p style="font-size:13px;color:var(--muted)">Orçamento: <b>${budgetLabels[p.budget]}</b><br>Experiência: <b>${expLabels[p.experience]}</b><br>Tempo: <b>${timeLabels[p.time]}</b></p><div class="result" style="margin-top:14px"><small>IDEIA PARA AVALIAR</small><strong style="font-size:17px">${idea}</strong><p style="font-size:12px;margin-bottom:0">${why}</p></div><p style="font-size:13px;margin-top:14px"><b>Seu próximo passo:</b> ${steps} ${time}</p><button class="btn ghost small" onclick="show('plano')">Ir para o plano de 7 dias →</button>`;
+}
+function exportBackup(){
+ const payload={app:'PRIMEIRO PEDIDO',version:2,exportedAt:new Date().toISOString(),data};
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');
+ a.href=url;a.download='backup-primeiro-pedido-'+new Date().toISOString().slice(0,10)+'.json';a.click();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function importBackup(event){
+ const file=event.target.files&&event.target.files[0];if(!file)return;
+ const reader=new FileReader();
+ reader.onload=()=>{
+  try{
+   const parsed=JSON.parse(reader.result);const incoming=parsed.data||parsed;
+   if(!incoming||!Array.isArray(incoming.tasks)||!Array.isArray(incoming.products)||!Array.isArray(incoming.orders))throw new Error('Formato inválido');
+   if(!confirm('Restaurar este backup? Os dados atuais deste navegador serão substituídos.'))return;
+   data={tasks:incoming.tasks,products:incoming.products,orders:incoming.orders,profile:incoming.profile||null};
+   save();renderProfile();alert('Backup restaurado com sucesso.');
+  }catch(e){alert('Não foi possível restaurar. Selecione um backup válido do PRIMEIRO PEDIDO.');}
+  finally{event.target.value='';}
+ };
+ reader.readAsText(file);
+}
+
+function renderAll(){renderTasks();renderProducts();renderOrders();renderProfile()}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function copyText(id){let el=document.getElementById(id);el.select();if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(el.value).then(()=>alert('Mensagem copiada!')).catch(()=>alert('Selecione e copie a mensagem.'))}else{document.execCommand('copy');alert('Mensagem copiada!')}}
+document.getElementById('today').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+calculate();renderAll();
+</script>
+</body></html>
